@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require reset
+ *= require_tree .
+ *= require_self
+ */
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Give+You+Glory|Karma:300);
+/* CSS Document */
+
+/* ------Elements--------- */
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font: normal 100% 'Lato', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+/* ---------IDs----------- */
+
+#header {
+	background-color: #4d87c5;
+	text-align: center;
+	margin: 0px;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	margin: 0px;
+	padding-top: 40px;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+#header h2 {
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 24px;
+}
+
+#page {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0px auto;
+	background-color: #FFFFFF;
+}
+
+#footer {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.cleanlink {
+	text-decoration: none;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+/*---------Classes----------*/
+.fullcolor {
+	background-color: #4d87c5;
+}
+
+/*---------Home Action----------*/
+#homepage {
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 300px;
+}
+
+#homepage h1 {
+	font: normal 100% 'Karma', sans-serif;
+	margin: 0px;
+	font-size: 96px;
+	letter-spacing: 1px;
+	padding-top: 20px;
+}
+
+#homepage h2 {
+	margin: 0px;
+	font-size: 48px;
+}
+
+/*---------CoverLetter Action----------*/

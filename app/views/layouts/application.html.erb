@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kate Dramstad Cover Letter</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="header">
+		<h1><%= link_to "I adore this product!", root_url, {:class => "cleanlink white"} %></h1>
+		<h2>Take a look at a few of my favorite RocksBox experiences.</h2>
+	</div>
+	<div id="page">
+		<%= yield %>
+	</div>
+	<div id="footer">
+		<%= link_to "I would love to join the RocksBox team! Let me tell you why...", coverletter_path, {:class => "cleanlink"} %>
+	</div>
+</body>
+</html>

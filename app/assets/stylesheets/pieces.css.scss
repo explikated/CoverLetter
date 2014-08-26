@@ -1,0 +1,63 @@
+// Place all the styles related to the Pieces controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*-------index---------*/
+#gallery {
+	padding-top: 20px;
+}
+
+.gallery_item img{
+	width: 30%;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #EEEEEE;
+}
+
+.gallery_item :hover {
+	-ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+}
+
+/*-------show---------*/
+
+h3 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+table {
+	margin-top: 50px;
+}
+
+.nav_col {
+	width: 4%;
+	vertical-align: middle;
+}
+
+.nav_col img{
+	width: 100%;
+}
+
+
+.contents_col {
+	width: 40%;
+	vertical-align: top;
+}
+
+.img_display {
+	width: 90%;
+	padding-left: 6%;
+}
+
+#story {
+	padding-left: 20px;
+	padding-right: 40px;
+}
+
+#story > p {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	line-height: 200%;
+}

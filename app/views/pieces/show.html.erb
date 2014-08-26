@@ -1,0 +1,28 @@
+<table>
+<tr>
+	<td class="nav_col">
+		<% if @piece.id > 1 %>
+			<%= link_to image_tag("left.png"), @piece.previous %>
+		<% end %>
+	</td>
+	<td class="contents_col">
+		<%= image_tag(@piece.photo_path, :class => "img_display") %>
+	</td>
+	<td class="contents_col">
+		<div id="story">
+			<h3>Box #<%= @piece.box %></h3>
+			<p><%= @piece.name %> by <%= @piece.brand %></p>
+			<p><%= @piece.story %></p>
+		</div>
+	</td>
+	<td class="nav_col">
+		<% if @piece.id < @pieces.count %>
+			<%= link_to image_tag("right.png"), @piece.next %>
+		<% end %>
+	</td>
+</tr>
+</table>
+
+
+
+
