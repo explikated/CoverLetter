@@ -1,3 +1,29 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------Home Action----------*/
+#homepage {
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 300px;
+}
+
+#homepage h1 {
+	font: normal 100% 'Karma', sans-serif;
+	margin: 0px;
+	font-size: 96px;
+	letter-spacing: 1px;
+	padding-top: 20px;
+}
+
+#homepage h2 {
+	margin: 0px;
+	font-size: 48px;
+}
+
+a.entrancelink:link, a.entrancelink:visited{
+	color: #FFFFFF;
+}
+
+/*---------CoverLetter Action----------*/

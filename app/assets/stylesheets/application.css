@@ -70,6 +70,7 @@ h1, h2 {
 
 .cleanlink {
 	text-decoration: none;
+	color: #4d87c5;
 }
 
 .white {
@@ -81,24 +82,3 @@ h1, h2 {
 	background-color: #4d87c5;
 }
 
-/*---------Home Action----------*/
-#homepage {
-	text-align: center;
-	color: #FFFFFF;
-	margin-top: 300px;
-}
-
-#homepage h1 {
-	font: normal 100% 'Karma', sans-serif;
-	margin: 0px;
-	font-size: 96px;
-	letter-spacing: 1px;
-	padding-top: 20px;
-}
-
-#homepage h2 {
-	margin: 0px;
-	font-size: 48px;
-}
-
-/*---------CoverLetter Action----------*/
