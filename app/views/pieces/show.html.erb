@@ -12,7 +12,7 @@
 		<div id="story">
 			<h3>Box #<%= @piece.box %></h3>
 			<p><%= @piece.name %> by <%= @piece.brand %></p>
-			<p><%= @piece.story %></p>
+			<p><%=raw @piece.story %> </p>
 		</div>
 	</td>
 	<td class="nav_col">

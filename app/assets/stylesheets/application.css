@@ -67,6 +67,10 @@ h2 {
 	text-align: center;
 }
 
+#footer a {
+	font-size: 24px;
+}
+
 .cleanlink {
 	text-decoration: none;
 	color: #3c79ba;

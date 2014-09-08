@@ -1,3 +1,4 @@
+# encoding: utf-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -17,13 +18,13 @@ f = Piece.create(name:"Wire Wrapped Raw Stone Necklace", brand:"Robyn Rhodes", b
 #Add stories to Pieces
 a.story = "I fell in love with RockBox the moment I opened my first box. The beautiful pink ribbon, the excitement of taking each piece out of its bag, RocksBox box made me feel special. As a young woman in a new city just starting my first real job, my life was a little bit stressful. What a joy to get a box full of goodies every month!"
 a.save
-b.story  = "Three years ago, I never would have bought a necklace like this. I’ve always like the idea of statement jewelry but I never felt comfortable committing to a piece. I didn’t want to buy it if I wasn’t ever going to wear it. Enter RocksBox. Now I keep the statement necklaces that I have to convince myself *not* to wear four times a week, and send back the ones that don’t really fit in my wardrobe, even if they are beautiful."
+b.story  = "Three years ago, I never would have bought a necklace like this. I’ve always like the idea of statement jewelry but I never felt comfortable committing to a piece. I didn’t want to buy it if I wasn’t ever going to wear it. Enter RocksBox. Now I keep the statement necklaces that I have to convince myself *not* to wear four times a week, and send back the ones that don’t really fit in my wardrobe, even if they are beautiful.".force_encoding('UTF-8')
 b.save
 c.story = ""
 c.save
 d.story = "One of my RocksBox pieces turned out to be a real life saver. When I gave a talk at SharePoint Conference this year, the A/V guy was having trouble attaching the mic to my blouse. Chunky necklace to the rescue! He clipped the mic to my necklace instead. From now on I’ll remember to wear either a blazer or a sturdy necklace when lapel mics cross my path."
 d.save
-e.story = "I have this friend who is also a RocksBox member, and pretty much every time I see her, we go through the same exchange: <br> “Oooh! I like your bracelet. RocksBox?” <br> “You know it. I like your necklace. RocksBox?” <br> “Heck yes.” I didn’t expect that becoming a RocksBox member would make me feel like I’m party of an elite secret society, complete with member greeting rituals."
+e.story = "I have this friend who is also a RocksBox member, and pretty much every time I see her, we go through the same exchange: <br> Oooh! I like your bracelet. RocksBox? <br> You know it. I like your necklace. RocksBox? <br> Heck yes! <br> I didn’t expect that becoming a RocksBox member would make me feel like I’m party of an elite secret society, complete with member greeting rituals."
 e.save
 f.story = ""
 f.save
