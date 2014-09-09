@@ -71,9 +71,12 @@ h2 {
 	font-size: 24px;
 }
 
+.colorlink {
+	color: #3c79ba;
+}
+
 .cleanlink {
 	text-decoration: none;
-	color: #3c79ba;
 }
 
 .white {
