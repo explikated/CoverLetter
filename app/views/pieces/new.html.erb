@@ -1,0 +1,11 @@
+<%= form_for @piece, url: {action: "create"} do |p| %>
+	<%= p.label :name %><br />
+	<%= p.text_field :name %><br />
+	<%= p.label :brand %><br />
+	<%= p.text_field :brand %><br />
+	<%= p.label :box %><br />
+	<%= p.number_field :box %><br />
+	<%= p.label :story %><br />
+	<%= p.text_area :story, :rows => 10 %><br />
+	<%= p.submit "Create" %>
+<% end %>

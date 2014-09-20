@@ -40,3 +40,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 # Include 'rails_12factor' gem to enable all platform features
 gem 'rails_12factor'
+
+gem 'aws-sdk'
