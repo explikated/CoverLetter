@@ -2,7 +2,7 @@
 <tr>
 	<td class="nav_col">
 		<% if @piece.id > 1 %>
-			<%= link_to image_tag("left.png"), @piece.previous %>
+			<%# = link_to image_tag("left.png"), @piece.previous %>
 		<% end %>
 	</td>
 	<td class="contents_col">
@@ -22,7 +22,7 @@
 	</td>
 	<td class="nav_col">
 		<% if @piece.id < @pieces.count %>
-			<%= link_to image_tag("right.png"), @piece.next %>
+			<%# = link_to image_tag("right.png"), @piece.next %>
 		<% end %>
 	</td>
 </tr>
