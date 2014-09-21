@@ -61,3 +61,29 @@ table {
 	padding-bottom: 20px;
 	line-height: 200%;
 }
+
+/*-------new---------*/
+
+.piece_form ul {
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.piece_form li{
+    padding:12px; 
+}
+
+.piece_form label {
+	display: block;
+	padding-bottom: 8px;
+	font-size: 20px;
+}
+
+.piece_form input:not([type=submit]):not([type=number]), textarea {
+	width: 400px;
+}
+
+.piece_form input[type=number] {
+	width: 50px;
+}

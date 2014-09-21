@@ -6,6 +6,8 @@ class Piece < ActiveRecord::Base
 	
   # This method associates the attribute ":photo" with a file attachment
   has_attached_file :photo,
+    :styles => {
+      :medium => "400x400#"},
     :storage => :s3,
 	:bucket => 'kdrams-rb-coverletter',
 	:s3_credentials => "#{Rails.root}/config/s3.yml"

@@ -1,13 +1,28 @@
-<%= form_for @piece, url: {action: "create"} do |p| %>
-	<%= p.label :name %><br />
-	<%= p.text_field :name %><br />
-	<%= p.label :brand %><br />
-	<%= p.text_field :brand %><br />
-	<%= p.label :box %><br />
-	<%= p.number_field :box %><br />
-	<%= p.label :story %><br />
-	<%= p.text_area :story, :rows => 10 %><br />
-	<%= p.label :photo %><br />
-	<%= p.file_field :photo %><br />
-	<%= p.submit "Create" %>
+<%= form_for @piece, :html => {:class => 'piece_form'}, url: {action: "create"} do |p| %>
+<ul>
+	<li>
+		<%= p.label :name, "Piece Name" %>
+		<%= p.text_field :name %>
+	</li>
+	<li>
+		<%= p.label :brand %>
+		<%= p.text_field :brand %>
+	</li>
+	<li>
+		<%= p.label :box, "Box Number" %>
+		<%= p.number_field :box %>
+		<span class="form_hint">View your previous boxes at RocksBox.</span>
+	</li>
+	<li>
+		<%= p.label :story, "Share the story behind this piece" %>
+		<%= p.text_area :story %>
+	</li>
+	<li>
+		<%= p.label :photo, "Upload a photo of you looking fabulous!" %>
+		<%= p.file_field :photo %>
+	</li>
+	<li>
+		<%= p.submit "Share" %>
+	</li>
+</ul>
 <% end %>

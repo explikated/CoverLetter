@@ -1,3 +1,6 @@
+<div id="create_new">
+	<%= link_to "Back to all stories", pieces_path %>
+</div>
 <table>
 <tr>
 	<td class="nav_col">
@@ -8,7 +11,7 @@
 	<td class="contents_col">
 		<%# TODO: eventually fix the model so only one URL is needed %>
 		<% if @piece.photo_path.nil? %>
-			<%= image_tag(@piece.photo.url, :class => "img_display") %>
+			<%= image_tag(@piece.photo.url(:medium), :class => "img_display") %>
 		<% else %>
 			<%= image_tag(@piece.photo_path, :class => "img_display") %>
 		<% end %>
