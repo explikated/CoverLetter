@@ -1,7 +1,9 @@
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
 
-#AWS::S3::DEFAULT_HOST = "s3-us-west-2"
+# Load heroku vars from local file
+heroku_env = File.join(Rails.root, 'config', 'heroku_env.rb')
+load(heroku_env) if File.exists?(heroku_env)
 
 # Initialize the Rails application.
 Rails.application.initialize!
