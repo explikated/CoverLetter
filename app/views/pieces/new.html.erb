@@ -7,5 +7,7 @@
 	<%= p.number_field :box %><br />
 	<%= p.label :story %><br />
 	<%= p.text_area :story, :rows => 10 %><br />
+	<%= p.label :photo %><br />
+	<%= p.file_field :photo %><br />
 	<%= p.submit "Create" %>
 <% end %>

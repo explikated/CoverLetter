@@ -1,5 +1,9 @@
 <div id="gallery">
 	<% @pieces.sort.each do |piece| %>
-		<%= link_to image_tag( piece.photo_path ), piece, class: "gallery_item" %>
+		<% if piece.photo_path.nil? %>
+			<%= link_to image_tag(piece.photo.url), piece, class: "gallery_item" %>
+		<% else %>
+			<%= link_to image_tag(piece.photo_path ), piece, class: "gallery_item" %>
+		<% end %>
 	<% end %>
 </div>

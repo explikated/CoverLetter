@@ -23,6 +23,6 @@ class PiecesController < ApplicationController
   end
   
   def piece_params
-	params.require(:piece).permit(:name, :story, :box, :photo_path, :brand)
+	params.require(:piece).permit(:name, :story, :box, :photo_path, :brand, :photo)
   end
 end

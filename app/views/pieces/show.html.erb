@@ -6,7 +6,12 @@
 		<% end %>
 	</td>
 	<td class="contents_col">
-		<%= image_tag(@piece.photo_path, :class => "img_display") %>
+		<%# TODO: eventually fix the model so only one URL is needed %>
+		<% if @piece.photo_path.nil? %>
+			<%= image_tag(@piece.photo.url, :class => "img_display") %>
+		<% else %>
+			<%= image_tag(@piece.photo_path, :class => "img_display") %>
+		<% end %>
 	</td>
 	<td class="contents_col">
 		<div id="story">
