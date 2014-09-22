@@ -4,7 +4,6 @@ class Piece < ActiveRecord::Base
   validates :box, presence: true, :numericality => { :greater_than_or_equal_to => 1 }
   validates :story, presence: true
   validates :photo,
-    presence: true,
     attachment_content_type: { content_type: /\Aimage\/.*\Z/ },
     attachment_size: { less_than: 5.megabytes }
 	
