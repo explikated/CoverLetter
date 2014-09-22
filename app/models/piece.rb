@@ -1,5 +1,5 @@
 class Piece < ActiveRecord::Base
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true
   validates :brand, presence: true
   validates :box, presence: true, :numericality => { :greater_than_or_equal_to => 1 }
   validates :story, presence: true
