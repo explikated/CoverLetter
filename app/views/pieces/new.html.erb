@@ -3,24 +3,24 @@
 <ul>
 	<li>
 		<%= p.label :name, "Piece Name" %>
-		<%= p.text_field :name %>
+		<%= p.text_field :name, :required => true %>
 	</li>
 	<li>
 		<%= p.label :brand %>
-		<%= p.text_field :brand %>
+		<%= p.text_field :brand, :required => true %>
 	</li>
 	<li>
 		<%= p.label :box, "Box Number" %>
-		<%= p.number_field :box %>
-		<span class="form_hint">View your previous boxes at RocksBox.</span>
+		<%= p.number_field :box, :required => true %>
+		<span class="form_hint", id="piece_box_hint">View your <a href="https://www.rocksbox.com/account/previous_sets" target="_blank">previous RocksBox sets</a>.</span>
 	</li>
 	<li>
 		<%= p.label :story, "Share the story behind this piece" %>
-		<%= p.text_area :story %>
+		<%= p.text_area :story, :required => true %>
 	</li>
 	<li>
-		<%= p.label :photo, "Upload a photo of you looking fabulous!" %>
-		<%= p.file_field :photo %>
+		<%= p.label :photo, "Upload a photo of you looking fabulous! <5Mb" %>
+		<%= p.file_field :photo, :required => true %>
 	</li>
 	<li>
 		<%= p.submit "Share" %>

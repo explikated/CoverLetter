@@ -6,6 +6,7 @@
 /*-------index---------*/
 #gallery {
 	padding-top: 20px;
+	clear: right;
 }
 
 .gallery_item img{
@@ -18,6 +19,21 @@
 	-ms-transform: rotate(1deg); /* IE 9 */
     -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
     transform: rotate(1deg);
+}
+
+#create_new {
+	width: 32%;
+	margin: 10px;
+	padding-top: 30px;
+	padding-right: 30px;
+	float: right;
+}
+
+#create_new a {
+	padding: 20px 30px;
+	font-size: 22px;
+	background-color: #ba3c79;
+	color: white;
 }
 
 /*-------show---------*/
@@ -66,7 +82,7 @@ table {
 
 #newpieceform {
 	display: block;
-	width: 420px;
+	width: 450px;
 	margin: 30px auto 0px auto;
 }
 
@@ -88,8 +104,23 @@ table {
 
 .piece_form input:not([type=submit]):not([type=number]), textarea {
 	width: 400px;
+	height: 24px;
 }
 
 .piece_form input[type=number] {
 	width: 50px;
+	height: 24px;
+}
+
+.form_hint {
+	padding-left: 10px;
+}
+
+input[type=submit] {
+	padding:5px 15px; 
+	background:#3c79ba; 
+	border:0 none;
+	cursor:pointer;
+	color: white;
+	margin-bottom: 80px;
 }
